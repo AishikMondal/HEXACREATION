@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hexa Creation</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0px;
+        padding: 0px;
+      }
+      .hero {
+        background: url("https://tse1.mm.bing.net/th?id=OIG1.rXwk0hRKylAEYLXGGgVD&pid=ImgGn")
+          no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .shiny-text {
+        font-size: 4rem;
+        position: relative;
+        color: #fff;
+        z-index: 1;
+        overflow: hidden;
+        background: linear-gradient(120deg, #ff6ec7, #f9ff3c, #18f8ff, #ff6ec7);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s ease infinite;
+        backdrop-filter: blur(5px);
+      }
+      @keyframes shine {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+      .hero h1 {
+        font-size: 4rem;
+      }
+      .hero p {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #e3f2fd"
+    >
+      <a class="navbar-brand" href="#">Hexa Creation</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#workshops">Workshops</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 class="shiny-text">Hexa Creation</h1>
+      <p>Weaving Heritage, Shaping Futures</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>
+            Hexa Creation is a textile startup that collaborates with rural
+            artisans, weavers, and potters to create unique, eco-friendly
+            products. Our mission is to empower grassroots artisans, ensure fair
+            pay, and promote eco-consciousness.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="https://tse1.mm.bing.net/th?id=OIG1.TRcIPvR7yxqLxuTsiSju&pid=ImgGn"
+            class="img-fluid"
+            alt="About Us"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="container py-5">
+      <h2 class="text-center">Our Products</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://tse1.mm.bing.net/th?id=OIG4.y698NsUSRBIKnFj8reWx&pid=ImgGn"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hand-Stitched Fabrics</h5>
+              <p class="card-text">
+                Featuring Kantha embroidery, Gujarati mirror work, and Parsi
+                Gara on sustainable fabrics.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://tse2.mm.bing.net/th?id=OIG3.uzanYWW0nMA90orqCan7&pid=ImgGn"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Premium Apparel</h5>
+              <p class="card-text">
+                Unique designs on sustainable fabrics, creating one-of-a-kind
+                apparel items.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://tse3.mm.bing.net/th?id=OIG4..1haP1P8k67fm7joXl36&pid=ImgGn"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Home Décor Items</h5>
+              <p class="card-text">
+                Handcrafted home décor items featuring intricate designs and
+                sustainable materials.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center">Workshops</h2>
+        <p class="text-center">
+          Join our workshops to learn traditional crafts from skilled artisans.
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Textile Workshops</h3>
+            <p>
+              Learn Kantha embroidery, Gujarati mirror work, and Parsi Gara from
+              our expert weavers.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3>Pottery Workshops</h3>
+            <p>
+              Explore the art of pottery and create your own ceramic buttons,
+              jewelry, or coasters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+      <h2 class="text-center">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h3>Get in Touch</h3>
+          <p>Email: contact@hexacreation.com</p>
+          <p>Phone: +91-1234567890</p>
+          <p>Address: 123, Artisan Street, Kolkata, India</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Hexa Creation. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
