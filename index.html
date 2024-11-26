@@ -15,8 +15,8 @@
         padding: 0px;
       }
       .hero {
-        background: url("https://tse1.mm.bing.net/th?id=OIG1.rXwk0hRKylAEYLXGGgVD&pid=ImgGn")
-          no-repeat center center fixed;
+        background: url("https://i.postimg.cc/fJ54FS28/image.png") no-repeat
+          center center fixed;
         background-size: cover;
         height: 100vh;
         color: #fff;
@@ -52,6 +52,65 @@
       }
       .hero p {
         font-size: 1.5rem;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 400px; /* Set a fixed height to maintain size */
+        object-fit: cover; /* Ensure the image covers the container */
+        transition: opacity 1s ease-in-out;
+      }
+
+      .card-body {
+        padding: 15px;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .card-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #555;
+      }
+
+      .animate-text {
+        animation: text-fade 2s infinite;
+      }
+
+      @keyframes text-fade {
+        0% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.2;
+        }
       }
     </style>
   </head>
@@ -120,53 +179,47 @@
     </section>
 
     <!-- Products Section -->
+    <!-- Products Section -->
     <section id="products" class="container py-5">
       <h2 class="text-center">Our Products</h2>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card mb-4">
-            <img
-              src="https://tse1.mm.bing.net/th?id=OIG4.y698NsUSRBIKnFj8reWx&pid=ImgGn"
-              class="card-img-top"
-              alt="Product 1"
-            />
+            <div class="img-container">
+              <img
+                src="https://tse1.mm.bing.net/th?id=OIG4.y698NsUSRBIKnFj8reWx&pid=ImgGn"
+                class="card-img-top"
+                alt="Hand-Stitched Fabrics"
+                id="product1-img"
+              />
+            </div>
             <div class="card-body">
               <h5 class="card-title">Hand-Stitched Fabrics</h5>
-              <p class="card-text">
-                Featuring Kantha embroidery, Gujarati mirror work, and Parsi
-                Gara on sustainable fabrics.
+              <p class="card-text animate-text">
+                Featuring intricate Kantha embroidery, Gujarati mirror work, and
+                Parsi Gara on sustainable fabrics. Each piece is a unique blend
+                of tradition and modernity, meticulously crafted to perfection.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card mb-4">
-            <img
-              src="https://tse2.mm.bing.net/th?id=OIG3.uzanYWW0nMA90orqCan7&pid=ImgGn"
-              class="card-img-top"
-              alt="Product 2"
-            />
+            <div class="img-container">
+              <img
+                src="https://i.postimg.cc/t7DTpJ7M/image.png"
+                class="card-img-top"
+                alt="Premium Apparel"
+                id="product2-img"
+              />
+            </div>
             <div class="card-body">
               <h5 class="card-title">Premium Apparel</h5>
-              <p class="card-text">
+              <p class="card-text animate-text">
                 Unique designs on sustainable fabrics, creating one-of-a-kind
-                apparel items.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img
-              src="https://tse3.mm.bing.net/th?id=OIG4..1haP1P8k67fm7joXl36&pid=ImgGn"
-              class="card-img-top"
-              alt="Product 3"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Home Décor Items</h5>
-              <p class="card-text">
-                Handcrafted home décor items featuring intricate designs and
-                sustainable materials.
+                apparel items. Our premium apparel range is stylish,
+                eco-friendly, and crafted with the utmost care to ensure quality
+                and comfort.
               </p>
             </div>
           </div>
@@ -238,8 +291,13 @@
         </div>
         <div class="col-md-6">
           <h3>Get in Touch</h3>
-          <p>Email: contact@hexacreation.com</p>
-          <p>Phone: +91-1234567890</p>
+          <p>
+            Email:
+            <a href="mailto:creationhexa4@gmail.com"
+              >creationhexa4@gmail.com
+            </a>
+          </p>
+          <p>Phone: 9883111231, 8343812556</p>
           <p>Address: 123, Artisan Street, Kolkata, India</p>
         </div>
       </div>
@@ -254,5 +312,36 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      // JavaScript for image switching
+      const productImages = [
+        {
+          element: document.getElementById("product1-img"),
+          images: [
+            "https://tse1.mm.bing.net/th?id=OIG4.y698NsUSRBIKnFj8reWx&pid=ImgGn",
+            "https://i.postimg.cc/S2NBrSqn/image.png",
+          ],
+        },
+        {
+          element: document.getElementById("product2-img"),
+          images: [
+            "https://i.postimg.cc/t7DTpJ7M/image.png",
+            "https://i.postimg.cc/KRRZb561/image.png",
+          ],
+        },
+      ];
+
+      productImages.forEach((product) => {
+        let currentIndex = 0;
+        setInterval(() => {
+          product.element.style.opacity = 0;
+          setTimeout(() => {
+            currentIndex = (currentIndex + 1) % product.images.length;
+            product.element.src = product.images[currentIndex];
+            product.element.style.opacity = 1;
+          }, 1000);
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
