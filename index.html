@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nakshi Choya</title>
+    <title>NAKSHI CHOYA</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -15,8 +15,8 @@
         padding: 0px;
       }
       .hero {
-        background: url("https://tse1.mm.bing.net/th?id=OIG1.rXwk0hRKylAEYLXGGgVD&pid=ImgGn")
-          no-repeat center center fixed;
+        background: url("https://i.postimg.cc/fJ54FS28/image.png") no-repeat
+          center center fixed;
         background-size: cover;
         height: 100vh;
         color: #fff;
@@ -53,6 +53,65 @@
       .hero p {
         font-size: 1.5rem;
       }
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 400px; /* Set a fixed height to maintain size */
+        object-fit: cover; /* Ensure the image covers the container */
+        transition: opacity 1s ease-in-out;
+      }
+
+      .card-body {
+        padding: 15px;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .card-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #555;
+      }
+
+      .animate-text {
+        animation: text-fade 2s infinite;
+      }
+
+      @keyframes text-fade {
+        0% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
     </style>
   </head>
   <body>
@@ -61,7 +120,7 @@
       class="navbar navbar-expand-lg navbar-light"
       style="background-color: #e3f2fd"
     >
-      <a class="navbar-brand" href="#">NAKSHI CHOYA</a>
+      <a class="navbar-brand" href="#">Nakshi Choya</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -120,16 +179,20 @@
     </section>
 
     <!-- Products Section -->
+    <!-- Products Section -->
     <section id="products" class="container py-5">
       <h2 class="text-center">Our Products</h2>
       <div class="row">
         <div class="col-md-6">
           <div class="card mb-4">
-            <img
-              src="https://tse1.mm.bing.net/th?id=OIG4.y698NsUSRBIKnFj8reWx&pid=ImgGn"
-              class="card-img-top"
-              alt="Hand-Stitched Fabrics"
-            />
+            <div class="img-container">
+              <img
+                src="https://tse1.mm.bing.net/th?id=OIG4.y698NsUSRBIKnFj8reWx&pid=ImgGn"
+                class="card-img-top"
+                alt="Hand-Stitched Fabrics"
+                id="product1-img"
+              />
+            </div>
             <div class="card-body">
               <h5 class="card-title">Hand-Stitched Fabrics</h5>
               <p class="card-text animate-text">
@@ -142,11 +205,14 @@
         </div>
         <div class="col-md-6">
           <div class="card mb-4">
-            <img
-              src="https://tse2.mm.bing.net/th?id=OIG3.uzanYWW0nMA90orqCan7&pid=ImgGn"
-              class="card-img-top"
-              alt="Premium Apparel"
-            />
+            <div class="img-container">
+              <img
+                src="https://i.postimg.cc/t7DTpJ7M/image.png"
+                class="card-img-top"
+                alt="Premium Apparel"
+                id="product2-img"
+              />
+            </div>
             <div class="card-body">
               <h5 class="card-title">Premium Apparel</h5>
               <p class="card-text animate-text">
@@ -160,91 +226,98 @@
         </div>
       </div>
     </section>
-
-    <!-- Workshops Section -->
-    <!--<section id="workshops" class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center">Workshops</h2>
-        <p class="text-center">
-          Join our workshops to learn traditional crafts from skilled artisans.
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5">
+    <h2 class="text-center">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h3>Get in Touch</h3>
+        <p>
+          Email:
+          <a href="mailto:creationhexa4@gmail.com"
+            >choyanakshi@gmail.com
+          </a>
         </p>
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Textile Workshops</h3>
-            <p>
-              Learn Kantha embroidery, Gujarati mirror work, and Parsi Gara from
-              our expert weavers.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <h3>Pottery Workshops</h3>
-            <p>
-              Explore the art of pottery and create your own ceramic buttons,
-              jewelry, or coasters.
-            </p>
-          </div>
-        </div>
+        <p>Phone: 9883111231, 8343812556</p>
+        <p>Address: 123, Artisan Street, Kolkata, India</p>
       </div>
-    </section>-->
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container py-5">
-      <h2 class="text-center">Contact Us</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="Your Name"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Your Email"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                class="form-control"
-                id="message"
-                rows="4"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <h3>Get in Touch</h3>
-          <p>
-            Email:
-            <a href="mailto:choyanakshi@gmail.com"
-              >choyanakshi@gmail.com
-            </a>
-          </p>
-          <p>Phone: 9883111231, 8343812556</p>
-          <p>Address: 123, Artisan Street, Kolkata, India</p>
-        </div>
-      </div>
-    </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Nakshi Choya. All rights reserved.</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <p>&copy; 2024 Nakshi Choya. All rights reserved.</p>
-    </footer>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript for image switching
+    const productImages = [
+      {
+        element: document.getElementById("product1-img"),
+        images: [
+          "https://tse1.mm.bing.net/th?id=OIG4.y698NsUSRBIKnFj8reWx&pid=ImgGn",
+          "https://i.postimg.cc/S2NBrSqn/image.png",
+        ],
+      },
+      {
+        element: document.getElementById("product2-img"),
+        images: [
+          "https://i.postimg.cc/t7DTpJ7M/image.png",
+          "https://i.postimg.cc/KRRZb561/image.png",
+        ],
+      },
+    ];
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    productImages.forEach((product) => {
+      let currentIndex = 0;
+      setInterval(() => {
+        product.element.style.opacity = 0;
+        setTimeout(() => {
+          currentIndex = (currentIndex + 1) % product.images.length;
+          product.element.src = product.images[currentIndex];
+          product.element.style.opacity = 1;
+        }, 1000);
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
+    <!-- Workshops Section -->
   </body>
 </html>
